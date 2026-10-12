@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Self-healing composites: next-generation materials with responsive behavior">
+  <defs>
+    <linearGradient id="psGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d8fd6"/>
+      <stop offset="1" stop-color="#15a7ab"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="20" fill="url(#psGrad)" opacity="0.18"/>
+  <path d="M130 150 a70 70 0 1 1 20 50" fill="none" stroke="#1f6fb2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M150 200 l-6 -26 l26 6 z" fill="#1f6fb2"/>
+  <path d="M185 120 l30 0 l-15 60 z" fill="#15a7ab" opacity="0.6"/>
+  <circle cx="200" cy="150" r="14" fill="#2d8fd6" opacity="0.6"/>
+</svg>

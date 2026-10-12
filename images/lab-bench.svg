@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600" role="img" aria-label="Laboratory bench with testing equipment">
+  <defs>
+    <linearGradient id="labGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eef6ff"/>
+      <stop offset="1" stop-color="#5fd3d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" rx="32" fill="url(#labGrad)"/>
+  <rect x="100" y="430" width="600" height="30" rx="8" fill="#1f6fb2" opacity="0.7"/>
+  <!-- flask -->
+  <path d="M330 230 h40 v70 l50 110 a20 20 0 0 1 -18 30 h-104 a20 20 0 0 1 -18 -30 l50 -110 z"
+        fill="#ffffff" fill-opacity="0.6" stroke="#184f86" stroke-width="4"/>
+  <path d="M318 360 h64 l20 50 a20 20 0 0 1 -18 30 h-88 a20 20 0 0 1 -18 -30 z" fill="#15a7ab" opacity="0.5"/>
+  <!-- test tubes -->
+  <g stroke="#184f86" stroke-width="4" fill="#ffffff" fill-opacity="0.6">
+    <rect x="470" y="250" width="34" height="180" rx="17"/>
+    <rect x="520" y="250" width="34" height="180" rx="17"/>
+    <rect x="570" y="250" width="34" height="180" rx="17"/>
+  </g>
+  <g fill="#2d8fd6" opacity="0.6">
+    <rect x="470" y="360" width="34" height="70" rx="12"/>
+    <rect x="520" y="330" width="34" height="100" rx="12"/>
+    <rect x="570" y="380" width="34" height="50" rx="12"/>
+  </g>
+</svg>

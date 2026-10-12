@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300" role="img" aria-label="Antimicrobial materials: infection-resistant composite systems">
+  <defs>
+    <linearGradient id="paGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2d8fd6"/>
+      <stop offset="1" stop-color="#15a7ab"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" rx="20" fill="url(#paGrad)" opacity="0.18"/>
+  <path d="M200 70 l70 26 v54 c0 50 -34 76 -70 90 c-36 -14 -70 -40 -70 -90 v-54 z"
+        fill="#ffffff" fill-opacity="0.5" stroke="#184f86" stroke-width="4"/>
+  <path d="M170 150 l22 24 l44 -52" fill="none" stroke="#15a7ab" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
