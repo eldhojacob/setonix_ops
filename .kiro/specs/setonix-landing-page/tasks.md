@@ -93,7 +93,7 @@
     them with relative paths.
   - _Requirements: 13.4, 12.1, 12.2_
 
-- [ ] 12. Implement the interactive JavaScript (`js/main.js`)
+- [x] 12. Implement the interactive JavaScript (`js/main.js`)
   - Hero load-in fade: add `is-loaded` after first paint (guarded by reduced-motion).
   - Scroll reveal: IntersectionObserver over `[data-reveal]`, add `is-visible` once,
     apply per-element delay, reduced-motion fallback marks all visible.
@@ -101,7 +101,7 @@
   - Mobile menu toggle with `aria-expanded`.
   - _Requirements: 2.3, 2.4, 2.5, 3.1, 11.1, 11.2, 11.3, 11.4_
 
-- [ ] 13. Wire the Formspree contact form with mailto fallback
+- [x] 13. Wire the Formspree contact form with mailto fallback
   - Add a `FORMSPREE_ENDPOINT` constant (placeholder `https://formspree.io/f/XXXXXXX`).
   - Validate Name/Email/Message, show inline errors, block invalid submits.
   - If configured, `fetch(FORMSPREE_ENDPOINT, POST)` with `Accept: application/json`, show
@@ -109,20 +109,20 @@
     `mailto:info@setonixtech.com`.
   - _Requirements: 9.4, 9.5, 9.6, 9.7_
 
-- [ ] 14. Responsive, accessibility, and reduced-motion polish
+- [x] 14. Responsive, accessibility, and reduced-motion polish
   - Verify stacked reflow with no horizontal overflow at 375px, 768px, 1280px.
   - Ensure visible keyboard focus on all interactive elements and AA-level text contrast.
   - Confirm `prefers-reduced-motion` disables all animations.
   - _Requirements: 13.2, 13.3, 13.4, 11.3_
 
-- [ ] 15. Write the README and GitHub Pages / Formspree setup docs
+- [x] 15. Write the README and GitHub Pages / Formspree setup docs
   - Document: `npm install` → `npm run build:css`, how to get a Formspree form id and set
     `FORMSPREE_ENDPOINT`, how to commit the compiled CSS, push, and enable GitHub Pages
     (Settings → Pages → main / root), and the resulting `https://<user>.github.io/<repo>/`
     URL.
   - _Requirements: 12.4_
 
-- [ ] 16. Final build, local verification, and deployment prep
+- [x] 16. Final build, local verification, and deployment prep
   - Run `npm run build:css`; serve the folder locally (e.g. `npx serve .`) and manually
     verify section order, content, hero fade-in, scroll reveals, nav, mobile menu, and the
     form against the poster.

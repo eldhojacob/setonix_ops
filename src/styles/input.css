@@ -98,3 +98,51 @@ body.is-loaded .hero-fade {
     transition: none;
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Interactive state styles (plain CSS so they are never purged).      */
+/* These are keyed to classes/attributes toggled by js/main.js.        */
+/* ------------------------------------------------------------------ */
+
+/* Sticky-header style once the page is scrolled a little (JS toggles  */
+/* `.scrolled` on <header>). Strengthens the base bg-white/90 + blur.  */
+header.scrolled {
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.08);
+}
+
+/* Anchor targets clear the fixed 64px header during smooth scroll. */
+main section[id] {
+  scroll-margin-top: 4.5rem;
+}
+
+/* Contact-form inline validation + status states. */
+.form-error {
+  color: #b91c1c;
+  font-size: 0.8125rem;
+  margin-top: 0.25rem;
+}
+
+.form-status {
+  font-size: 0.9375rem;
+  margin-top: 0.5rem;
+}
+
+.form-status.is-success {
+  color: theme("colors.teal.500");
+}
+
+.form-status.is-error {
+  color: #b91c1c;
+}
+
+[aria-invalid="true"] {
+  border-color: #b91c1c;
+}
+
+/* Visible keyboard focus for every interactive element (covers plain  */
+/* links that lack a Tailwind focus-visible ring utility).             */
+*:focus-visible {
+  outline: 2px solid theme("colors.brand.400");
+  outline-offset: 2px;
+}
