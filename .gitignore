@@ -1,0 +1,10 @@
+# Dependencies (build-time only — not served by GitHub Pages)
+node_modules/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.log
+
+# NOTE: css/styles.css is intentionally NOT ignored.
+# GitHub Pages runs no build, so the compiled stylesheet must be committed.

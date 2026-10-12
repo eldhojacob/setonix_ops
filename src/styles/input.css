@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /* Pill buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center rounded-full px-6 py-3 font-semibold text-white shadow-sm transition-transform duration-200 bg-brand-gradient hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center rounded-full border border-brand-200 px-6 py-3 font-semibold text-brand-600 transition-colors duration-200 hover:bg-brand-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 focus-visible:ring-offset-2;
+  }
+
+  /* White rounded card with soft shadow and subtle border */
+  .card {
+    @apply bg-white rounded-2xl shadow-sm border border-slate-100 p-6;
+  }
+
+  /* Small uppercase tracked label */
+  .eyebrow {
+    @apply text-xs font-semibold uppercase tracking-widest text-teal-500;
+  }
+
+  /* Vertical padding + max-width centered container */
+  .section {
+    @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 md:py-24;
+  }
+}
+
+@layer utilities {
+  /* Diagonal blue -> teal wash for full-section backgrounds */
+  .bg-hero-gradient {
+    background-image: linear-gradient(
+      135deg,
+      theme("colors.brand.50") 0%,
+      theme("colors.brand.100") 45%,
+      theme("colors.teal.300") 100%
+    );
+  }
+
+  /* Blue -> teal gradient for buttons and panels */
+  .bg-brand-gradient {
+    background-image: linear-gradient(
+      135deg,
+      theme("colors.brand.500") 0%,
+      theme("colors.teal.500") 100%
+    );
+  }
+
+  /* Gradient-clipped text */
+  .text-gradient {
+    background-image: linear-gradient(
+      135deg,
+      theme("colors.brand.500") 0%,
+      theme("colors.teal.500") 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/* Scroll-reveal + hero load-in animation (plain CSS so it is never    */
+/* purged by Tailwind's content scan).                                 */
+/* ------------------------------------------------------------------ */
+
+[data-reveal] {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Hero load-in fade, driven by `.is-loaded` on <body> */
+body .hero-fade {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+body.is-loaded .hero-fade {
+  opacity: 1;
+  transform: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-reveal],
+  body .hero-fade {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
