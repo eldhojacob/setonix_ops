@@ -6,5 +6,23 @@ node_modules/
 Thumbs.db
 *.log
 
+# Secrets / local config — never commit (MCP config holds API tokens)
+settings/
+**/mcp.json
+.env
+.env.*
+
+# Workflow scratch artifacts
+.agents/
+
+# Secrets / local config — never commit (contains API tokens)
+settings/
+.kiro/settings/mcp.json
+*.env
+.env
+
+# Agent working artifacts
+.agents/
+
 # NOTE: css/styles.css is intentionally NOT ignored.
 # GitHub Pages runs no build, so the compiled stylesheet must be committed.
